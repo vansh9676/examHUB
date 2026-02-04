@@ -19,7 +19,7 @@
 * **Frontend:** HTML5, CSS3, Bootstrap 5
 * **Backend:** PHP 8.2 (Procedural/MySQLi)
 * **Database:** MySQL / MariaDB (Defaulted to Port 3307 for compatibility)
-* **Data Entry:** LibreOffice Calc (CSV UTF-8)
+* **Data Entry:** LibreOffice-Calc/MS-Excel (CSV  File)
 
 ---
 
