@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --accent-color: #ff8800;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background-color: #f0f7ff;
+    padding: 80px 0;
+}
+
+.card {
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.badge-free { background-color: #28a745; color: white; }
+.badge-paid { background-color: #ffc107; color: black; }
+.hover-link:hover {
+    background-color: #0056b3 !important;
+    color: white !important;
+    border-color: #0056b3 !important;
+    transition: 0.3s;
+}
+/* Gmail Style Profile DP */
+.profile-dp {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff; /* Google Blue */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.profile-dp:hover {
+    filter: brightness(90%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-dp-large {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Hover effect for Dropdown Items */
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
