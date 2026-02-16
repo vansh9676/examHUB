@@ -1,0 +1,108 @@
+/* Core Layout and Theme */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+    color: #333;
+}
+
+/* Hero Section - Matching index.php gradient */
+.hero-section {
+    background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%) !important;
+    padding: 80px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #212529;
+}
+
+/* Custom Buttons - Respecting your blue theme */
+.btn-primary {
+    background: #0d6efd !important;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px !important; /* Pill style from your index.php */
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Card Grid and Mock Cards */
+.card {
+    border: 1px solid #edf2f7 !important;
+    border-radius: 1rem !important; /* rounded-4 from your index.php */
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.08) !important;
+}
+
+/* Hover effect for syllabus badges */
+.hover-link {
+    transition: 0.2s;
+}
+
+.hover-link:hover {
+    background-color: #0d6efd !important;
+    color: white !important;
+    border-color: #0d6efd !important;
+}
+
+/* Mock Stats Section inside cards */
+.row.g-0.py-2.bg-light {
+    border-radius: 0.75rem;
+    margin: 10px 0;
+}
+
+/* Custom Badge Colors */
+.bg-primary-subtle {
+    background-color: #e7f1ff !important;
+}
+
+/* Palette and Timer styling for take_test.php */
+#timerDisplay {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+}
+
+.palette-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px !important;
+    font-weight: 600;
+}
+/* Custom styling for the option labels in take_test.php */
+.option-hover-effect {
+    display: block;
+    padding: 1rem; /* Standard desktop padding */
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* MOBILE ONLY: Shrink the option boxes */
+@media (max-width: 575.98px) {
+    .option-hover-effect {
+        padding: 0.5rem 0.75rem !important; /* Smaller vertical and horizontal padding */
+        font-size: 0.875rem !important;    /* Smaller text for mobile */
+        margin-bottom: 0.5rem !important;  /* Reduce space between options */
+    }
+    
+    /* Optional: Scale down the actual radio dot if needed */
+    .option-hover-effect input[type="radio"] {
+        transform: scale(0.9);
+        margin-right: 5px !important;
+    }
+}
